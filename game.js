@@ -22,9 +22,9 @@ const ball = {
     x: canvas.width / 2,
     y: canvas.height / 4,
     size: 10,
-    speed: 2,
-    dx: 2,
-    dy: 2
+    speed: 3,
+    dx: 3,
+    dy: 3
 };
 
 // Draw paddle
@@ -92,7 +92,7 @@ function moveBall() {
         document.getElementById('score').textContent = `Score: ${score}`;
 
         // Increase ball height (dy) slightly on every collision with the paddle
-        ball.dy -= 0.2;
+        ball.dy -= 0.3;
     }
 
     // Game over (ball touches bottom)
