@@ -1,0 +1,54 @@
+Canvas Paddle Ball Game
+A simple paddle ball game built using HTML5 Canvas and JavaScript. Control the paddle to keep the ball bouncing and score points by preventing the ball from falling off the screen.
+
+Features
+Keyboard and Touch Control: Control the paddle using either arrow keys or by touching the screen (for mobile devices).
+Dynamic Ball Movement: The ball bounces off the walls and paddle, with its speed increasing slightly after each paddle hit.
+Score Tracking: Keeps track of the score and displays it in real-time.
+Game Over Alert: When the ball touches the bottom of the canvas, the game ends and shows an alert.
+Watermark: A watermark is displayed in the background of the game canvas.
+How to Play
+Control the Paddle:
+
+Use the left and right arrow keys to move the paddle on desktop.
+On mobile devices, you can move the paddle by dragging or touching the screen.
+Objective:
+
+Prevent the ball from falling off the bottom of the screen by bouncing it off the paddle.
+Each time the ball bounces off the paddle, your score increases by 1.
+The game ends if the ball touches the bottom of the screen.
+Installation and Setup
+Clone or download the repository:
+
+bash
+Copy code
+git clone https://github.com/your-username/canvas-paddle-ball-game.git
+Open the index.html file in any modern web browser.
+
+Folder Structure
+bash
+Copy code
+/paddle-ball-game
+  ├── index.html       # The main HTML file to run the game.
+  ├── game.js          # JavaScript file containing game logic.
+  ├── style.css        # Optional styling for the game layout.
+  └── README.md        # Project documentation.
+Technologies Used
+HTML5 Canvas: For rendering the paddle, ball, and game elements.
+JavaScript: Core game logic, including event listeners for keyboard and touch controls.
+CSS: (Optional) for additional styling if needed.
+Customization
+Ball Speed: You can adjust the initial speed of the ball by modifying the ball.dx and ball.dy values in game.js.
+Watermark: You can customize or remove the watermark text by editing the drawWatermark() function in game.js.
+Paddle Control: Both arrow key and touch-based movement are supported. You can modify the paddle speed by adjusting the paddle.speed value.
+Known Issues
+The game reloads the page after displaying the "Game Over" alert.
+Touch control may be sensitive on some devices, but can be adjusted by tweaking the movePaddleWithTouch() function.
+Future Enhancements
+Add levels with increasing difficulty.
+Add a restart button after "Game Over" without reloading the page.
+Add sound effects for ball-paddle collisions.
+Improve responsiveness for different screen sizes.
+License
+This project is licensed under the MIT License.
+
