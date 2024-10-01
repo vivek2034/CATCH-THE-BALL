@@ -24,7 +24,7 @@ const ball = {
     size: 10,
     speed: 2,
     dx: 2,
-    dy: 1
+    dy: 2
 };
 
 // Draw paddle
